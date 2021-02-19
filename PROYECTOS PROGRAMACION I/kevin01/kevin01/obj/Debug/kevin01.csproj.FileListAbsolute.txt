@@ -15,3 +15,7 @@ C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.csproj.CoreCompileInputs.cache
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.exe
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.pdb
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\bin\Debug\kevin01.exe.config
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\bin\Debug\kevin01.exe
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\bin\Debug\kevin01.pdb
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.VISTA.frmMenu.resources

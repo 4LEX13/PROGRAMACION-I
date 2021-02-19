@@ -7,8 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using kevin01.NEGOCIO;
+
 
 namespace kevin01
+
 {
     public partial class Form1 : Form
     {
@@ -34,14 +37,32 @@ namespace kevin01
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+         
             Login log = new Login();
 
-            log.Usuario  
+            log.Usuario = txtUser.Text;
+            log.Password = txtPassword.Text;
 
 
 
+            clsLogin clsL = new clsLogin();
 
+            int variabledeevaluacion=  clsL.accceso(log);
+
+            if (variabledeevaluacion== 1) {
+
+                MessageBox.Show("welcome");
+            }
+
+            else
+            {
+                MessageBox.Show("false");
+            }
+        }
+
+        private void btnCanselar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

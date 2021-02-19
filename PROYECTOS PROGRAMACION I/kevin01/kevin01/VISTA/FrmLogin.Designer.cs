@@ -33,8 +33,8 @@ namespace kevin01
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnCanselar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUser
@@ -69,6 +69,7 @@ namespace kevin01
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
             this.txtPassword.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(33, 169);
             this.txtPassword.Name = "txtPassword";
@@ -76,42 +77,48 @@ namespace kevin01
             this.txtPassword.Size = new System.Drawing.Size(192, 25);
             this.txtPassword.TabIndex = 3;
             // 
-            // button1
+            // btnEntrar
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(36, 231);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "ENTRAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEntrar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Location = new System.Drawing.Point(36, 231);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(88, 34);
+            this.btnEntrar.TabIndex = 4;
+            this.btnEntrar.Text = "ENTRAR";
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnCanselar
             // 
-            this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(139, 231);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 34);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "CANCELAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCanselar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCanselar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCanselar.Location = new System.Drawing.Point(139, 231);
+            this.btnCanselar.Name = "btnCanselar";
+            this.btnCanselar.Size = new System.Drawing.Size(86, 34);
+            this.btnCanselar.TabIndex = 5;
+            this.btnCanselar.Text = "CANCELAR";
+            this.btnCanselar.UseVisualStyleBackColor = true;
+            this.btnCanselar.Click += new System.EventHandler(this.btnCanselar_Click);
             // 
             // Form1
             // 
-            this.AcceptButton = this.button1;
+            this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.CancelButton = this.btnCanselar;
             this.ClientSize = new System.Drawing.Size(249, 311);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCanselar);
+            this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUser);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.TransparencyKey = System.Drawing.Color.Navy;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -124,8 +131,8 @@ namespace kevin01
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.Button btnCanselar;
     }
 }
 

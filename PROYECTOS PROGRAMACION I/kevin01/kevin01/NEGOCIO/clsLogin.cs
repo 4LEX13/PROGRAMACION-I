@@ -8,7 +8,21 @@ namespace kevin01.NEGOCIO
 {
     class clsLogin
     {
-        public int acceso(Login log)
+        Login log = new Login();
+
+        public int accceso(Login log) {
+
+            int estado = 0;
+            if (log.Usuario.Equals("kevin") && log.Password.Equals("123"))
+            {
+                estado = 1;
+
+            }
+
+            return estado;
+
+        }
+        
 
     }
 }

@@ -8,5 +8,7 @@ namespace kevin01.NEGOCIO
 {
     class clsLogin
     {
+        public int acceso(Login log)
+
     }
 }

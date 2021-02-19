@@ -8,3 +8,10 @@ C:\Users\kevin\Documents\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevi
 C:\Users\kevin\Documents\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.csproj.CoreCompileInputs.cache
 C:\Users\kevin\Documents\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.exe
 C:\Users\kevin\Documents\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.pdb
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.Properties.Resources.resources
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.Form1.resources
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.csproj.GenerateResource.cache
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.exe
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\kevin01\kevin01\obj\Debug\kevin01.pdb

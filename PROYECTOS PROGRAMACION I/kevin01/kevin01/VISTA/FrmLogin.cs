@@ -31,5 +31,17 @@ namespace kevin01
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Login log = new Login();
+
+            log.Usuario  
+
+
+
+
+        }
     }
 }

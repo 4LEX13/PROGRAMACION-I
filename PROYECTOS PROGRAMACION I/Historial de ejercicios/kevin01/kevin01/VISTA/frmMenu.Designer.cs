@@ -32,13 +32,15 @@ namespace kevin01.VISTA
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.asercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clickParaMasInformacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.arreglosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asercaDeToolStripMenuItem});
+            this.asercaDeToolStripMenuItem,
+            this.arreglosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(559, 24);
@@ -59,6 +61,13 @@ namespace kevin01.VISTA
             this.clickParaMasInformacionToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.clickParaMasInformacionToolStripMenuItem.Text = "click para mas informacion";
             this.clickParaMasInformacionToolStripMenuItem.Click += new System.EventHandler(this.clickParaMasInformacionToolStripMenuItem_Click);
+            // 
+            // arreglosToolStripMenuItem
+            // 
+            this.arreglosToolStripMenuItem.Name = "arreglosToolStripMenuItem";
+            this.arreglosToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.arreglosToolStripMenuItem.Text = "Arreglos";
+            this.arreglosToolStripMenuItem.Click += new System.EventHandler(this.arreglosToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -84,5 +93,6 @@ namespace kevin01.VISTA
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem asercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clickParaMasInformacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem arreglosToolStripMenuItem;
     }
 }

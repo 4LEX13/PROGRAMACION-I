@@ -28,5 +28,12 @@ namespace kevin01.VISTA
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void arreglosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaVisualDeUsuarios frm = new frmListaVisualDeUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

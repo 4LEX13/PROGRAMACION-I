@@ -17,8 +17,13 @@ namespace kevin01.VISTA
             InitializeComponent();
         }
 
+        public String usuarioEstado;
+
+
+
         private void frmMenu_Load(object sender, EventArgs e)
         {
+            label1.Text = usuarioEstado;
 
         }
 
@@ -34,6 +39,22 @@ namespace kevin01.VISTA
             frmListaVisualDeUsuarios frm = new frmListaVisualDeUsuarios();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void sumaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperaciones frmop = new frmOperaciones();
+            frmop.MdiParent = this;
+            frmop.btnResta.Enabled = false;
+            frmop.Show();
+        }
+
+        private void restaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmOperaciones frmop = new frmOperaciones();
+            frmop.MdiParent = this;
+            frmop.btnSuma.Enabled = false;
+            frmop.Show();
         }
     }
 }

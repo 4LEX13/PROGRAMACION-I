@@ -46,23 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAO\clsListaUsuarios.cs" />
     <Compile Include="DOMINIO\Login.cs" />
-    <Compile Include="frm1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="NEGOCIO\clsLogin.cs" />
     <Compile Include="VISTA\frmAsercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VISTA\frmAsercaDe.Designer.cs">
       <DependentUpon>frmAsercaDe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="VISTA\frmListaVisualDeUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VISTA\frmListaVisualDeUsuarios.Designer.cs">
-      <DependentUpon>frmListaVisualDeUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="VISTA\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -78,12 +68,6 @@
     <Compile Include="VISTA\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="VISTA\frmOperaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VISTA\frmOperaciones.Designer.cs">
-      <DependentUpon>frmOperaciones.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -96,17 +80,11 @@
     <EmbeddedResource Include="VISTA\frmAsercaDe.resx">
       <DependentUpon>frmAsercaDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VISTA\frmListaVisualDeUsuarios.resx">
-      <DependentUpon>frmListaVisualDeUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="VISTA\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VISTA\frmOperaciones.resx">
-      <DependentUpon>frmOperaciones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

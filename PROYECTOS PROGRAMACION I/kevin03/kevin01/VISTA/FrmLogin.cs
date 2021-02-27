@@ -53,7 +53,6 @@ namespace kevin01
 
                 MessageBox.Show("welcome");
                 frmMenu frm = new frmMenu();
-                frm.usuarioEstado = txtUser.Text;
                 frm.Show();
                 this.Hide();
             }

@@ -34,18 +34,21 @@ namespace kevin01.VISTA
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.btnBorrar = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
             this.lblpassword = new System.Windows.Forms.Label();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(147, 253);
+            this.button1.Location = new System.Drawing.Point(56, 475);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 59);
             this.button1.TabIndex = 0;
@@ -82,16 +85,6 @@ namespace kevin01.VISTA
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(247, 20);
             this.txtPass.TabIndex = 4;
-            // 
-            // btnBorrar
-            // 
-            this.btnBorrar.Location = new System.Drawing.Point(465, 253);
-            this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(164, 59);
-            this.btnBorrar.TabIndex = 5;
-            this.btnBorrar.Text = "Borrar";
-            this.btnBorrar.UseVisualStyleBackColor = true;
-            this.btnBorrar.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtId
             // 
@@ -147,18 +140,47 @@ namespace kevin01.VISTA
             this.lblpassword.TabIndex = 11;
             this.lblpassword.Text = "Password";
             // 
+            // btnBorrar
+            // 
+            this.btnBorrar.Location = new System.Drawing.Point(318, 475);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(164, 59);
+            this.btnBorrar.TabIndex = 12;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(563, 475);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(148, 59);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(89, 242);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(597, 194);
+            this.dataGridView1.TabIndex = 14;
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 546);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.lblpassword);
             this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombreUsuario);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.txtId);
-            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
@@ -166,6 +188,7 @@ namespace kevin01.VISTA
             this.Controls.Add(this.button1);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,12 +201,14 @@ namespace kevin01.VISTA
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtPass;
-        private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblNombreUsuario;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Label lblEdad;
         private System.Windows.Forms.Label lblpassword;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

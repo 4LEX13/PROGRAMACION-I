@@ -16,6 +16,15 @@ namespace kevin01.VISTA
         public frmUsuarios()
         {
             InitializeComponent();
+            using (ProgramacionEntities db = new ProgramacionEntities())
+            {
+
+                var lista = db.UserLis.ToList();
+                
+
+
+
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,12 +47,13 @@ namespace kevin01.VISTA
                     MessageBox.Show("save");
 
                 }
-                }catch(Exception Ex)
+            }
+            catch (Exception Ex)
             {
                 MessageBox.Show(Ex.ToString());
             }
-            
-            }
+
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -51,10 +61,10 @@ namespace kevin01.VISTA
             {
                 using (ProgramacionEntities db = new ProgramacionEntities())
                 {
-
-                    UserLis userLisddd = new UserLis();
                     int Eliminar = Convert.ToInt32(txtId.Text);
-                    userLisddd = db.UserLis.Find(Eliminar);
+                    UserLis userLisddd = db.UserLis.Where(x => x.Id == Eliminar).Select(x => x).FirstOrDefault();
+
+                    //userLisddd = db.UserLis.Find(Eliminar);
                     db.UserLis.Remove(userLisddd);
                     db.SaveChanges();
                 }
@@ -78,6 +88,25 @@ namespace kevin01.VISTA
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            using (ProgramacionEntities db = new ProgramacionEntities())
+            {
+                int update = Convert.ToInt32(txtId.Text);
+                UserLis user = db.UserLis.Where(x => x.Id == 2).Select(x => x).FirstOrDefault();
+                //UserLis userLisddd = new UserLis();
+                //userLisddd = db.UserLis.Find(2);
+                user.NombreUsuario = txtNombreUsuario.Text;
+                user.Apellido = txtApellido.Text;
+                user.Edad = Convert.ToInt32(txtEdad.Text);
+                user.Pass = txtPass.Text;
+                db.SaveChanges();
+
+
+
+            }
         }
     }
     }

@@ -26,7 +26,6 @@ C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historia
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.csprojAssemblyReference.cache
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.Properties.Resources.resources
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.VISTA.frmAsercaDe.resources
-C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.Form1.resources
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.VISTA.frmMenu.resources
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.csproj.GenerateResource.cache
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.csproj.CoreCompileInputs.cache
@@ -34,3 +33,10 @@ C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historia
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.pdb
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.VISTA.frmListaVisualDeUsuarios.resources
 C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.VISTA.frmOperaciones.resources
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.frmLogin.resources
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\bin\Debug\EntityFramework.dll
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\bin\Debug\EntityFramework.xml
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.VISTA.frmUsuarios.resources
+C:\Users\kevin\Documents\GitHub\PROGRAMACION-I\PROYECTOS PROGRAMACION I\Historial de ejercicios\kevin01\kevin01\obj\Debug\kevin01.csproj.CopyComplete

@@ -65,6 +65,7 @@ namespace kevin01.VISTA
             this.txtDato1.Name = "txtDato1";
             this.txtDato1.Size = new System.Drawing.Size(257, 20);
             this.txtDato1.TabIndex = 2;
+            this.txtDato1.TextChanged += new System.EventHandler(this.txtDato1_TextChanged);
             // 
             // txtDato2
             // 
@@ -124,6 +125,7 @@ namespace kevin01.VISTA
             this.Controls.Add(this.btnSuma);
             this.Name = "frmOperaciones";
             this.Text = "frmOperaciones";
+            this.Load += new System.EventHandler(this.frmOperaciones_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

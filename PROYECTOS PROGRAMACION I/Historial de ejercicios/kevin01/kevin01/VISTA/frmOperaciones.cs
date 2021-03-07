@@ -64,5 +64,15 @@ namespace kevin01.VISTA
                 MessageBox.Show("ahh tus datos no son correctos revisa" + Ex.ToString());
             }
         }
+
+        private void txtDato1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmOperaciones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

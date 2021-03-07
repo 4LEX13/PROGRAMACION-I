@@ -1,7 +1,7 @@
 ﻿
 namespace kevin01
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -100,7 +100,7 @@ namespace kevin01
             this.btnCanselar.UseVisualStyleBackColor = true;
             this.btnCanselar.Click += new System.EventHandler(this.btnCanselar_Click);
             // 
-            // Form1
+            // frmLogin
             // 
             this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,7 +115,7 @@ namespace kevin01
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUser);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "Form1";
+            this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
             this.TransparencyKey = System.Drawing.Color.Navy;

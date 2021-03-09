@@ -16,16 +16,35 @@ namespace kevin01.VISTA
         public frmUsuarios()
         {
             InitializeComponent();
+            carga();
+        }
+
+        void carga()
+            
+        {
+            dataGridView1.Rows.Clear();
             using (ProgramacionEntities db = new ProgramacionEntities())
             {
 
                 var lista = db.UserLis.ToList();
-                
 
+                foreach (var iteracion in lista)
+                {
+                    dataGridView1.Rows.Add(iteracion.Id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad,iteracion.Pass);
+
+
+                }
 
 
             }
+
+
+
+
         }
+
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -52,7 +71,7 @@ namespace kevin01.VISTA
             {
                 MessageBox.Show(Ex.ToString());
             }
-
+            carga();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -73,6 +92,7 @@ namespace kevin01.VISTA
             {
                 MessageBox.Show(Ex.ToString());
             }
+            carga();
         }
 
         private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
@@ -92,21 +112,36 @@ namespace kevin01.VISTA
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            using (ProgramacionEntities db = new ProgramacionEntities())
+            try
             {
-                int update = Convert.ToInt32(txtId.Text);
-                UserLis user = db.UserLis.Where(x => x.Id == 2).Select(x => x).FirstOrDefault();
-                //UserLis userLisddd = new UserLis();
-                //userLisddd = db.UserLis.Find(2);
-                user.NombreUsuario = txtNombreUsuario.Text;
-                user.Apellido = txtApellido.Text;
-                user.Edad = Convert.ToInt32(txtEdad.Text);
-                user.Pass = txtPass.Text;
-                db.SaveChanges();
+                using (ProgramacionEntities db = new ProgramacionEntities())
+                {
+                    int update = Convert.ToInt32(txtId.Text);
+                    UserLis user = db.UserLis.Where(x => x.Id == 2).Select(x => x).FirstOrDefault();
+                    //UserLis userLisddd = new UserLis();
+                    //userLisddd = db.UserLis.Find(2);
+                    user.NombreUsuario = txtNombreUsuario.Text;
+                    user.Apellido = txtApellido.Text;
+                    user.Edad = Convert.ToInt32(txtEdad.Text);
+                    user.Pass = txtPass.Text;
+                    db.SaveChanges();
 
 
 
+                }
+            } 
+            catch (Exception ex)
+            {
+
+
+                MessageBox.Show(ex.ToString());
             }
+            carga();
+        }
+
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

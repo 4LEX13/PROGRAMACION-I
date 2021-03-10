@@ -17,12 +17,24 @@ namespace kevin01.VISTA
         {
             InitializeComponent();
             carga();
+            clear();
+        }
+
+        void clear()
+        {
+            txtId.Clear();
+            txtNombreUsuario.Clear(); ;
+            txtApellido.Clear();
+            txtEdad.Clear();
+            txtPass.Clear();
+
+
         }
 
         void carga()
             
         {
-            dataGridView1.Rows.Clear();
+            dtgLiataUsuarios.Rows.Clear();
             using (ProgramacionEntities db = new ProgramacionEntities())
             {
 
@@ -30,7 +42,7 @@ namespace kevin01.VISTA
 
                 foreach (var iteracion in lista)
                 {
-                    dataGridView1.Rows.Add(iteracion.Id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad,iteracion.Pass);
+                    dtgLiataUsuarios.Rows.Add(iteracion.Id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad,iteracion.Pass);
 
 
                 }
@@ -72,6 +84,7 @@ namespace kevin01.VISTA
                 MessageBox.Show(Ex.ToString());
             }
             carga();
+            clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -93,6 +106,7 @@ namespace kevin01.VISTA
                 MessageBox.Show(Ex.ToString());
             }
             carga();
+            clear();
         }
 
         private void txtNombreUsuario_TextChanged(object sender, EventArgs e)
@@ -137,11 +151,26 @@ namespace kevin01.VISTA
                 MessageBox.Show(ex.ToString());
             }
             carga();
+            clear();
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dtgLiataUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String Id = dtgLiataUsuarios.CurrentRow.Cells[0].Value.ToString();
+            String Nombre = dtgLiataUsuarios.CurrentRow.Cells[1].Value.ToString();
+            String Apellido = dtgLiataUsuarios.CurrentRow.Cells[2].Value.ToString();
+            String Edad = dtgLiataUsuarios.CurrentRow.Cells[3].Value.ToString();
+            String Pass = dtgLiataUsuarios.CurrentRow.Cells[4].Value.ToString();
+            txtId.Text = Id;
+            txtNombreUsuario.Text = Nombre;
+            txtApellido.Text = Apellido;
+            txtEdad.Text = Edad;
+            txtPass.Text = Pass;
         }
     }
     }

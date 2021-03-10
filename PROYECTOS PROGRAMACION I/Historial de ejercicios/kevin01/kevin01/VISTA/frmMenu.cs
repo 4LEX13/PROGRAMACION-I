@@ -56,5 +56,12 @@ namespace kevin01.VISTA
             frmop.btnSuma.Enabled = false;
             frmop.Show();
         }
+
+        private void cROUDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUsuarios frm = new frmUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

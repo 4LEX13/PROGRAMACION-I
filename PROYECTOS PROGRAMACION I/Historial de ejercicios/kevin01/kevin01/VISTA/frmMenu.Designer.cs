@@ -37,6 +37,8 @@ namespace kevin01.VISTA
             this.sumaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.cONEXIONESDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cROUDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +47,8 @@ namespace kevin01.VISTA
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asercaDeToolStripMenuItem,
             this.arreglosToolStripMenuItem,
-            this.mATEMATICASToolStripMenuItem});
+            this.mATEMATICASToolStripMenuItem,
+            this.cONEXIONESDBToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(559, 24);
@@ -106,6 +109,21 @@ namespace kevin01.VISTA
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 
+            // cONEXIONESDBToolStripMenuItem
+            // 
+            this.cONEXIONESDBToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cROUDToolStripMenuItem});
+            this.cONEXIONESDBToolStripMenuItem.Name = "cONEXIONESDBToolStripMenuItem";
+            this.cONEXIONESDBToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.cONEXIONESDBToolStripMenuItem.Text = "CONEXIONES DB";
+            // 
+            // cROUDToolStripMenuItem
+            // 
+            this.cROUDToolStripMenuItem.Name = "cROUDToolStripMenuItem";
+            this.cROUDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cROUDToolStripMenuItem.Text = "CRUD";
+            this.cROUDToolStripMenuItem.Click += new System.EventHandler(this.cROUDToolStripMenuItem_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,5 +154,7 @@ namespace kevin01.VISTA
         private System.Windows.Forms.ToolStripMenuItem mATEMATICASToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sumaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONEXIONESDBToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cROUDToolStripMenuItem;
     }
 }

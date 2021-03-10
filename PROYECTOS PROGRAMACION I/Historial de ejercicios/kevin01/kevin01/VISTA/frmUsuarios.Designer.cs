@@ -42,13 +42,13 @@ namespace kevin01.VISTA
             this.lblpassword = new System.Windows.Forms.Label();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgLiataUsuarios = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgLiataUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -165,23 +165,24 @@ namespace kevin01.VISTA
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // dataGridView1
+            // dtgLiataUsuarios
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgLiataUsuarios.AllowUserToAddRows = false;
+            this.dtgLiataUsuarios.AllowUserToDeleteRows = false;
+            this.dtgLiataUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgLiataUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgLiataUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(89, 242);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(597, 194);
-            this.dataGridView1.TabIndex = 14;
+            this.dtgLiataUsuarios.Location = new System.Drawing.Point(89, 242);
+            this.dtgLiataUsuarios.Name = "dtgLiataUsuarios";
+            this.dtgLiataUsuarios.ReadOnly = true;
+            this.dtgLiataUsuarios.Size = new System.Drawing.Size(597, 194);
+            this.dtgLiataUsuarios.TabIndex = 14;
+            this.dtgLiataUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgLiataUsuarios_CellClick);
             // 
             // Column5
             // 
@@ -218,7 +219,7 @@ namespace kevin01.VISTA
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 546);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgLiataUsuarios);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.lblpassword);
@@ -234,7 +235,7 @@ namespace kevin01.VISTA
             this.Controls.Add(this.button1);
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgLiataUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,7 +256,7 @@ namespace kevin01.VISTA
         private System.Windows.Forms.Label lblpassword;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgLiataUsuarios;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

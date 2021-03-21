@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace kevin01
 {
     static class Program
@@ -16,7 +17,7 @@ namespace kevin01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUsuarios());
+            Application.Run(new frmMenu());
         }
     }
 }

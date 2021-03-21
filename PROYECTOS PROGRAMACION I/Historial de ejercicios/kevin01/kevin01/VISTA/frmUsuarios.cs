@@ -1,4 +1,5 @@
-﻿using kevin01.MODEL;
+﻿using kevin01.DAO;
+using kevin01.MODEL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,17 +36,12 @@ namespace kevin01.VISTA
             
         {
             dtgLiataUsuarios.Rows.Clear();
-            using (ProgramacionEntities db = new ProgramacionEntities())
+            clsDUserLis clsDUserLis = new clsDUserLis();
+            List<UserLis> Lista = clsDUserLis.cargarDatoUserLis();
+
+            foreach (var iteracion in Lista)
             {
-
-                var lista = db.UserLis.ToList();
-
-                foreach (var iteracion in lista)
-                {
-                    dtgLiataUsuarios.Rows.Add(iteracion.Id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad,iteracion.Pass);
-
-
-                }
+                dtgLiataUsuarios.Rows.Add(iteracion.Id, iteracion.NombreUsuario, iteracion.Apellido, iteracion.Edad, iteracion.Pass);
 
 
             }
@@ -60,51 +56,23 @@ namespace kevin01.VISTA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (ProgramacionEntities db = new ProgramacionEntities())
-                {
-
-                    UserLis userLis = new UserLis();
-
-                    userLis.NombreUsuario = txtNombreUsuario.Text;
-                    userLis.Apellido = txtApellido.Text;
-                    userLis.Edad = Convert.ToInt32(txtEdad.Text);
-                    userLis.Pass = txtPass.Text;
-
-                    db.UserLis.Add(userLis);
-                    db.SaveChanges();
-
-                    MessageBox.Show("save");
-
-                }
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.ToString());
-            }
+            clsDUserLis clsDUserLis = new clsDUserLis();
+            //clsDUserLis.saveDatoUser(txtNombreUsuario.Text, txtApellido.Text, Convert.ToInt32(txtEdad.Text), txtPass.Text);
+            UserLis userLis = new UserLis();
+            userLis.NombreUsuario = txtNombreUsuario.Text;
+            userLis.Apellido = txtApellido.Text;
+            userLis.Edad = Convert.ToInt32(txtEdad.Text);
+            userLis.Pass = txtPass.Text;
+            clsDUserLis.saveDatosUser(userLis);
+            
             carga();
             clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (ProgramacionEntities db = new ProgramacionEntities())
-                {
-                    int Eliminar = Convert.ToInt32(txtId.Text);
-                    UserLis userLisddd = db.UserLis.Where(x => x.Id == Eliminar).Select(x => x).FirstOrDefault();
-
-                    //userLisddd = db.UserLis.Find(Eliminar);
-                    db.UserLis.Remove(userLisddd);
-                    db.SaveChanges();
-                }
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show(Ex.ToString());
-            }
+            clsDUserLis user = new clsDUserLis();
+            user.deleteUer();
             carga();
             clear();
         }
